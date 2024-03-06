@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from "./components/navBar.jsx"
-import './index.css'
+import Home from './components/home.jsx'
+import "./App.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <><App/></>
+    <>
+    <App/>
+    <Home/>
+    </>
   </React.StrictMode>,
 )
