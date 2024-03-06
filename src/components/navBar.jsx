@@ -1,4 +1,5 @@
-import React from "react";
+import "./navBar.css"
+import {bussinessName} from "../constants"
 
 const Logo = () => (
   <svg
@@ -24,8 +25,10 @@ const App = () => (
   <nav>
     <div className="logo-container">
       <Logo />
-      <span className="logo-name"> Business Name</span>
+      <span className="logo-name"> 
+      {bussinessName}</span>
     </div>
   </nav>
+  
 );
 export default App;
