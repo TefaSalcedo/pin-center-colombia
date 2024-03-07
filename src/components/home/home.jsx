@@ -1,7 +1,9 @@
+import React from "react";
 import "./home.css";
-import { bussinessName } from "../constants";
-import {numberOfBussiness} from "../constants";
-
+import { bussinessName } from "../../constants";
+import { numberOfBussiness } from "../../constants";
+import photo from "./photo.jpg"
+import dots from "./dots.png"
 function Home() {
   return (
     <div className="home">
@@ -12,21 +14,23 @@ function Home() {
             <span className="description">
             Amplio catálogo de productos para tu motocicleta y vehículo
             </span>
-            <button className="contact-button" onClick={whatsappClick}>WhatsApp</button>
-            <div className="rating-container">
-                <span className="rating">
-                    {stars.map((star, i) => (
-                    <span key={`start id-${i}`}>{star}</span>
-                    ))}
-                </span>
-                <span className="about">Piezas de autos</span>
-                <span className="about">Accesorios para autos</span>
-            </div>
+        <button className="contact-button" onClick={whatsappClick}>
+          WhatsApp
+        </button>
+        <div className="rating-container">
+          <span className="rating">
+            {stars.map((star, i) => (
+              <span key={`start id-${i}`}>{star}</span>
+            ))}
+          </span>
+          <span className="about">Piezas de autos</span>
+          <span className="about">Accesorios para autos</span>
         </div>
-        <img src="./src/assets/dots.png" class="dots-background"></img>
-        <div className="image-container">
+      </div>
+      <img src={dots} class="dots-background" alt="dots background"></img>
+      <div className="image-container">
             <img
-            src="./src/assets/photo.jpg"
+            src={photo}
             alt="Imagen de la landing page"
             class="photo-home"
             />
@@ -61,7 +65,9 @@ const svgStar = (
 );
 const stars = Array(5).fill(svgStar);
 
-const whatsappClick=()=>{
-    const message = encodeURIComponent(`Hola ${bussinessName}, estoy interesad@ en los productos`);
-    window.open(`https://wa.me/${numberOfBussiness}?text=${message}`, '_blank');
-}
+const whatsappClick = () => {
+  const message = encodeURIComponent(
+    `Hola ${bussinessName}, estoy interesad@ en los productos`
+  );
+  window.open(`https://wa.me/${numberOfBussiness}?text=${message}`, "_blank");
+};
