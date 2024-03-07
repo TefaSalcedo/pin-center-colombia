@@ -1,0 +1,41 @@
+.footer {
+    font-size: 14px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    border-top: 0.9px solid rgba(0, 0, 0, 0.093);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 70px;
+    margin-top: 80px;
+  }
+  
+  .footer-text-left {
+    font-size: 25px;
+    padding-left: 40px;
+    word-spacing: 20px;
+  }
+  
+  a.menu:hover {
+    background-color: yellow;
+    font-size: 20px;
+  }
+  
+  .footer-content-right {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .icon-style {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-style:hover {
+    background-color: yellow;
+    padding: 5px;
+  }
