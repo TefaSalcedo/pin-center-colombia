@@ -85,10 +85,10 @@
 
   .dots-background {
     position: absolute;
-    top: 115px;
+    top: 90px;
     opacity: 0.04;
     z-index: 1; /* Esto coloca el fondo de puntos debajo de la imagen */
-    padding-left:50%;
-    width: 20%;
+    padding-left:47%;
+    width: 18%;
 }
 
