@@ -9,16 +9,22 @@ nav {
   .logo-container {
     display: flex;
     align-items: center;
-    gap:15px;
+    gap:1.8rem;
   }
   
   .logo-container img {
     margin-right: 10px;
-    height: 50px;
+    height: 70px;
   }
   
   .logo-name {
     color: rgba(0, 0, 0, 0.845);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1850px) {
+    nav{
+      height:50px;
+    }
   }
