@@ -1,5 +1,5 @@
 import "./navBar.css"
-import {bussinessName} from "../constants"
+import {bussinessName} from "../../constants"
 
 const Logo = () => (
   <svg
@@ -21,7 +21,7 @@ const Logo = () => (
   </svg>
 );
 
-const App = () => (
+const NavBar = () => (
   <nav>
     <div className="logo-container">
       <Logo />
@@ -31,4 +31,4 @@ const App = () => (
   </nav>
   
 );
-export default App;
+export default NavBar;

@@ -23,8 +23,8 @@ function Home() {
               <span key={`start id-${i}`}>{star}</span>
             ))}
           </span>
-          <span className="about">Piezas de autos</span>
-          <span className="about">Accesorios para autos</span>
+          <span className="about">Resortes</span>
+          <span className="about">Lujos y emblemas</span>
         </div>
       </div>
       <img src={dots} class="dots-background" alt="dots background"></img>
