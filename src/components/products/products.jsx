@@ -6,10 +6,16 @@ const Products = () => {
     fetchProducts();
   }, []);
 
+
+  const apiKey = import.meta.env.VITE_API_KEY;
+
   const fetchProducts = async () => {
     try {
+
+      const headers = new Headers( { 'Content-Type': 'application/json', 'Authorization': apiKey } );
+      const options = { method: 'GET', headers };
       const response = await fetch(
-        `https://can.canonic.dev/my-new-project-4130d3/api/productos`
+        `https://can.canonic.dev/my-new-project-4130d3/api/productos`, options
       );
       const { data } = await response.json();
       const productsImg = data.datos.listado.map((item) => ({
