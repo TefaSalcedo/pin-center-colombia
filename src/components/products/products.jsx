@@ -15,7 +15,7 @@ const Products = () => {
       const headers = new Headers( { 'Content-Type': 'application/json', 'Authorization': apiKey } );
       const options = { method: 'GET', headers };
       const response = await fetch(
-        `https://can.canonic.dev/my-new-project-4130d3/api/productos`, options
+        `https://app.canonic.dev/app/my-new-project-4130d3/api/productos`, options
       );
       const { data } = await response.json();
       const productsImg = data.datos.listado.map((item) => ({
